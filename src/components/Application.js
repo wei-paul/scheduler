@@ -1,33 +1,34 @@
-import React, {  useState, useEffect } from "react";
+import React from "react";
 import "components/Application.scss";
 import DayList from "components/DayList.js";
 import Appointment from "components/Appointment";
-import { getAppointmentsForDay, getInterview, getInterviewersForDay } from "helpers/selectors";
+import {
+  getAppointmentsForDay,
+  getInterview,
+  getInterviewersForDay,
+} from "helpers/selectors";
 import useApplicationData from "hooks/useApplicationData";
 
 export default function Application(props) {
-  const {
-    state,
-    setDay,
-    bookInterview,
-    cancelInterview
-  } = useApplicationData();
+  const { state, setDay, bookInterview, cancelInterview } =
+    useApplicationData();
 
-   const currentDayInterviewer = getInterviewersForDay(state, state.day)
-  const dailyAppointments = getAppointmentsForDay(state, state.day).map((appointment) => {
-    return (
-      <Appointment
-        key={appointment.id}
-        id={appointment.id}
-        time={appointment.time}
-        interview={getInterview(state, appointment.interview)}
-        interviewers={currentDayInterviewer}
-        bookInterview={bookInterview}
-        cancelInterview={cancelInterview}
-    
-      />
-    );
-  });
+  const currentDayInterviewer = getInterviewersForDay(state, state.day);
+  const dailyAppointments = getAppointmentsForDay(state, state.day).map(
+    (appointment) => {
+      return (
+        <Appointment
+          key={appointment.id}
+          id={appointment.id}
+          time={appointment.time}
+          interview={getInterview(state, appointment.interview)}
+          interviewers={currentDayInterviewer}
+          bookInterview={bookInterview}
+          cancelInterview={cancelInterview}
+        />
+      );
+    }
+  );
 
   return (
     <main className="layout">
@@ -47,7 +48,9 @@ export default function Application(props) {
           alt="Lighthouse Labs"
         />
       </section>
-      <section className="schedule">{dailyAppointments}</section>
+      <section className="schedule">
+        {dailyAppointments} <Appointment time="5pm" />
+      </section>
     </main>
   );
 }
