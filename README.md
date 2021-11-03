@@ -37,3 +37,5 @@ npm run storybook
 !["Screenshot of the newly created appointment with updated spots"](https://github.com/wei-paul/scheduler/blob/master/docs/bookedinterview.PNG?raw=true)
 
 !["Screenshot of the deleting the appointment"](https://github.com/wei-paul/scheduler/blob/master/docs/DeleteInterview.PNG?raw=true)
+
+!["Screenshot of the updated scheduler after deleting appointment"](https://github.com/wei-paul/scheduler/blob/master/docs/DeletedInterview.PNG?raw=true)
