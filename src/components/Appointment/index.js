@@ -23,7 +23,6 @@ export default function Appointment(props) {
   const { mode, transition, back } = useVisualMode(
     props.interview ? SHOW : EMPTY
   );
-  console.log("mode is: ", mode);
 
   function save(name, interviewer) {
     const interview = {
@@ -49,7 +48,6 @@ export default function Appointment(props) {
       .catch((error) => transition(ERROR_SAVE, true));
   }
 
-  console.log("props is: ", props);
   return (
     <article className="appointment">
       <Header time={props.time} />
