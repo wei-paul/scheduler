@@ -23,7 +23,7 @@ function bookInterview(id, interview) {
     [id]: appointment
   };
 
-
+  
   return axios.put(`/api/appointments/${id}`, {interview})
   .then((res) => {
     console.log(res)
