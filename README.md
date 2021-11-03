@@ -38,4 +38,4 @@ npm run storybook
 
 !["Screenshot of the deleting the appointment"](https://github.com/wei-paul/scheduler/blob/master/docs/DeleteInterview.PNG?raw=true)
 
-!["Screenshot of the updated scheduler after deleting appointment"](https://github.com/wei-paul/scheduler/blob/master/docs/DeletedInterview.PNG?raw=true)
+!["Screenshot of the updated scheduler after deleting appointment"](https://github.com/wei-paul/scheduler/blob/master/docs/deletedinterview.PNG?raw=true)
