@@ -26,14 +26,14 @@ npm run storybook
 
 ## Final Product
 
-!["Screenshot of the Main Page"](https://github.com/wei-paul/tinyapp/blob/master/docs/main.PNG?raw=true)
+!["Screenshot of the Main Page"](https://github.com/wei-paul/scheduler/blob/master/docs/Main.PNG?raw=true)
 
-!["Screenshot of choosing an empty spot"](https://github.com/wei-paul/tinyapp/blob/master/docs/urls.new.PNG?raw=true)
+!["Screenshot of choosing an empty spot"](https://github.com/wei-paul/scheduler/blob/master/docs/bookinterview.PNG?raw=true)
 
-!["Screenshot of entering name and choosing interviewer"](https://github.com/wei-paul/tinyapp/blob/master/docs/urls.edit.PNG?raw=true)
+!["Screenshot of entering name and choosing interviewer"](https://github.com/wei-paul/scheduler/blob/master/docs/choosinginterviewer.PNG?raw=true)
 
-!["Screenshot of saving the appointment"](https://github.com/wei-paul/tinyapp/blob/master/docs/urls.edit.PNG?raw=true)
+!["Screenshot of saving the appointment"](https://github.com/wei-paul/scheduler/blob/master/docs/savinginterview.PNG?raw=true)
 
-!["Screenshot of the newly created appointment with updated spots"](https://github.com/wei-paul/tinyapp/blob/master/docs/urls.edit.PNG?raw=true)
+!["Screenshot of the newly created appointment with updated spots"](https://github.com/wei-paul/scheduler/blob/master/docs/bookedinterview.PNG?raw=true)
 
-!["Screenshot of the deleting the appointment"](https://github.com/wei-paul/tinyapp/blob/master/docs/urls.edit.PNG?raw=true)
+!["Screenshot of the deleting the appointment"](https://github.com/wei-paul/scheduler/blob/master/docs/DeleteInterview.PNG?raw=true)
