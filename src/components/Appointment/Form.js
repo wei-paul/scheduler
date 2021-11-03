@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classNames from "classnames";
+
 import Button from "../Button";
 import InterviewerList from "../InterviewerList";
 
@@ -18,6 +18,10 @@ export default function Form(props){
     props.onCancel();
   }
 
+  const save = () => {
+    props.onSave(student, interviewer);
+  }
+
   return(
     <main className="appointment__card appointment__card--create">
       <section className="appointment__card-left">
@@ -25,10 +29,12 @@ export default function Form(props){
           <input
             className="appointment__create-input text--semi-bold"
             name="name"
+            value={props.name}
             type="text"
             placeholder="Enter Student Name"
             onChange={(event) => setStudent(event.target.value)}
             onSubmit={(event) => event.preventDefault()}
+            data-testid="student-name-input"
 
           />
         </form>
@@ -41,7 +47,7 @@ export default function Form(props){
       <section className="appointment__card-right">
         <section className="appointment__actions">
           <Button danger onClick={onCancel}>Cancel</Button>
-          <Button confirm onClick={props.onSave}>Save</Button>
+          <Button confirm onClick={save}>Save</Button>
         </section>
       </section>
     </main>
