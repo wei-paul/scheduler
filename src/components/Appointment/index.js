@@ -83,10 +83,10 @@ export default function Appointment(props) {
         <Form interviewers={props.interviewers} onSave={save} onCancel={back} />
       )}
       {mode === ERROR_SAVE && (
-        <Error onClose={back} message="Something went wrong!" />
+        <Error onClose={back} message="Can not save appointment!"/>
       )}
       {mode === ERROR_DELETE && (
-        <Error onClose={back} message="Something went wrong!" />
+        <Error onClose={back} message="Can not cancel appointment!"/>
       )}
     </article>
   );
